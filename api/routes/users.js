@@ -20,13 +20,6 @@ router.post('/signup', userController.signup);
 /* LOGIN */
 router.post('/login', userController.login);
 
-/* GET ALL JOBS */
-router.get('/employer/jobs',auth, userController.getAllJobs);
 
-/* GET APPLIED JOB */
-router.get('/worker/jobs',auth, userController.getAppliedJobs);
-
-/* INCOMING SMS HANDLER */
-router.post('/sms', userController.jobApplication);
 
 module.exports = router;
